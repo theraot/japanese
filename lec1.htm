@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Japonés para hispanos</title>
+        <script type="text/javascript" src="script/jquery.js"></script>
+        <script type="text/javascript" src="script/thoth.js"></script>
+        <script type="text/javascript">
+            function _toggle(tag, hidding, delay) {
+                if (hidding) {
+                    tag.hide(delay, function () {
+                        tag.css('visibility', 'hidden');
+                        tag.css('height', '0px');
+                    });
+                }
+                else {
+                    tag.css('visibility', 'visible');
+                    tag.css('height', 'auto');
+                    tag.show(delay);
+                }
+            }
+            function toggle(id) {
+                var tag = $("#" + id);
+                var hidding = tag.css('visibility') == 'visible';
+                _toggle(tag, hidding, 500);
+            }
+            $(document).ready(
+            function () {
+                _toggle($("div.spoiler"), true, 0);
+            }
+            );
+        </script>
+        <style type="text/css">
+            div.vocabulary
+            {
+                border-left: 3px solid gray;
+                padding-left: 5px;
+            }
+            div.spoiler
+            {
+                border: 1px dashed black;
+                padding-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            Japonés para hispanos
+        </h1>
+        <h2>
+            Lección 1: Presentarse
+        </h2>
+        <p>
+            Para empezar vamos a recurrir a la ayuda de Misato y Kaoru, por favor escucha como
+            se presentan ellos mismos.
+        </p>
+        <p>
+            Misato:
+            <audio controls="controls" src="audio/presentation misato.mp3">
+                <a href="audio/presentation misato.mp3" target="_blank">[escuchar]</a>
+            </audio>
+        </p>
+        <p>
+            Kaoru:
+            <audio controls="controls" src="audio/presentation kaoru.mp3">
+                <a href="audio/presentation kaoru.mp3" target="_blank">[escuchar]</a>
+            </audio>
+        </p>
+        <hr />
+        <p>
+            Ahora es tu turno de presentarte, ¿Cómo puedes hacerlo?
+        </p>
+        <hr />
+        <p>
+            En el transcurso de esta lección aprenderás, no solo a entender lo que han dicho
+            Misato y Kaoru, sino a presentarte tu mismo en Japonés.
+        </p>
+        <p>
+            Para empezar, será necesario decir "mucho gusto" o "es un placer". En Japonés dices:
+        </p>
+        <div class="vocabulary">
+            <p style="font-family: monospace;">
+                Hajimemashite.
+            </p>
+            <button style="width: 150px;" onclick="toggle('hajimemashite-ex');">
+                Practica</button>
+            <div id="hajimemashite-ex" class="spoiler">
+                <p>
+                    Escucha y repite la pronunciación de "Hajimemashite" silaba por silaba, desde el
+                    final:
+                </p>
+                <p>
+                    te te shite shite mashite mashite memashite memashite jimemashite jimemashite hajimemashite
+                    hajimemashite:
+                    <audio controls="controls" src="audio/hajimemashite ex.mp3">
+                        <a href="audio/hajimemashite ex.mp3" target="_blank">[escuchar]</a>
+                    </audio>
+                </p>
+            </div>
+            <button style="width: 150px;" onclick="toggle('hajimemashite-p');">
+                Pronunciación</button>
+            <div id="hajimemashite-p" class="spoiler">
+                <p>
+                    /jayimemashte/
+                </p>
+                <p>
+                    <audio controls="controls" src="audio/hajimemashite.mp3">
+                        <a href="audio/hajimemashite.mp3" target="_blank">[escuchar]</a>
+                    </audio>
+                </p>
+                <p>
+                    Note: las silabas con "h" en japonés se pronuncia como si fuesen con la "j" en español,
+                    a su vez las que tienen la "j" en japonés se pronuncia como si fuesen con la "y"
+                    en español. Por ultimo el sonido de la vocal en la silaba "shi" se pierde. No intente
+                    memorizar estas reglas, pues las aprenderá de forma natural con el uso.
+                </p>
+            </div>
+            <button style="width: 150px;" onclick="toggle('hajimemashite-e');">
+                Escritura</button>
+            <div id="hajimemashite-e" class="spoiler">
+                <p>
+                    Escritura Hiragana: はじめまして。
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Hiragana
+                            </th>
+                            <th>
+                                Rōmaji
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                は
+                            </td>
+                            <td>
+                                Ha*
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                じ
+                            </td>
+                            <td>
+                                Ji
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                め
+                            </td>
+                            <td>
+                                Me
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ま
+                            </td>
+                            <td>
+                                Ma
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                し
+                            </td>
+                            <td>
+                                Shi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                て
+                            </td>
+                            <td>
+                                Te
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    *: は cuando se utiliza como una partícula para indicar el sujeto de la oración se
+                    pronuncia y transcribe "wa", "ha" en caso contrario.
+                </p>
+                <p>
+                    Note: Los Hiragana 「じ」 y 「し」 son my similares. De hecho, las silabas con el sonido
+                    "sh" se cambian al sonido "j" (/y/) tan solo agregando la marca diacrítica 「゛」.
+                    Ésta marca diacrítica se conoce como "<strong>Dakuten</strong>".
+                </p>
+                <button style="width: 150px;" onclick="toggle('hajimemashite-k');">
+                    Kanji</button>
+                <div id="hajimemashite-k" class="spoiler">
+                    <p>
+                        Escritura Kanji: 初めまして
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Kanji
+                                </th>
+                                <th>
+                                    Rōmaji
+                                </th>
+                                <th>
+                                    Significado
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    初
+                                </td>
+                                <td>
+                                    Hatsu
+                                </td>
+                                <td>
+                                    Primero, nuevo, ingenuo
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button style="width: 150px;" onclick="toggle('hajimemashite-t');">
+                Traducción</button>
+            <div id="hajimemashite-t" class="spoiler">
+                <p>
+                    "Hajimemashite" es utilizado y se puede traducir como sigue: "Gusto en conocerlo".
+                </p>
+                <p>
+                    Por otro lado una traducción más literal seria: "Primera vez".
+                </p>
+            </div>
+        </div>
+        <p>
+            Para presentarte quieres decir "Yo soy __________". Donde reemplazas "__________"
+            con tu nombre. En Japonés dices:
+        </p>
+        <div class="vocabulary">
+            <p style="font-family: monospace;">
+                Watashi-wa __________ desu.
+            </p>
+            <button style="width: 150px;" onclick="toggle('watashiwa-ex');">
+                Practica</button>
+            <div id="watashiwa-ex" class="spoiler">
+                <p>
+                    Escucha y repite la pronunciación de "Watashi-wa __________ desu".
+                </p>
+                <p>
+                    Watashi-wa __________ desu, Watashi-wa kaoru desu, Watashi-wa __________ desu
+                    <audio controls="controls" src="audio/watashiwa desu r.mp3">
+                        <a href="audio/watashiwa desu r.mp3" target="_blank">[escuchar]</a>
+                    </audio>
+                </p>
+                <p>
+                    Escucha y repite la pronunciación de "Watashi" silaba por silaba desde el final:
+                </p>
+                <p>
+                    Shi shi tashi tashi watashi watashi:
+                    <audio controls="controls" src="audio/watashi ex.mp3">
+                        <a href="audio/watashi ex.mp3" target="_blank">[escuchar]</a>
+                    </audio>
+                </p>
+                <p>
+                    Si lo deseas, intenta practicar las partes de forma individual:
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>Watashi-wa</strong></p>
+                        <button style="width: 150px;" onclick="toggle('watashiwa');">
+                            Explicación</button>
+                        <div id="watashiwa" class="spoiler">
+                            <p>
+                                "Watashi-wa" se utiliza para hacer énfasis en que se esta hablando de si mismo.
+                                "Watashi" es el pronombre para "yo" y la partícula "wa" indica que la palabra anterior
+                                a la misma es el sujeto de la oración. La partícula "wa" solo se utiliza como parte
+                                de una oración, esto implica que "Watashi-wa" es una oración incompleta.
+                            </p>
+                            <p>
+                                Escucha y repite la pronunciación del pronombre "yo" como se utiliza en una oración.
+                            </p>
+                            <p>
+                                <audio controls="controls" src="audio/watashiwa.mp3">
+                                    <a href="audio/watashiwa.mp3" target="_blank">[escuchar]</a>
+                                </audio>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Desu</strong></p>
+                        <button style="width: 150px;" onclick="toggle('desu');">
+                            Explicación</button>
+                        <div id="desu" class="spoiler">
+                            <p>
+                                "Desu" es la forma presente del verbo "ser". En Japonés el verbo se coloca al final
+                                de la oración y no se conjuga para cada sujeto. Es decir que "desu" significa "soy",
+                                "eres", "es", "somos", "sois", y "son".
+                            </p>
+                            <p>
+                                En Japonés es común (y es a lo que nos debemos acostumbrar) encontrar el verbo al
+                                final de la oración. Sin embargo gracias al uso de las partículas (por ejemplo "wa")
+                                las oraciones no pierden sentido si se reordenan las palabras.
+                            </p>
+                            <p>
+                                Hay que resaltar que el sonido de la vocal en "su" se pierde, por lo que "Desu"
+                                suena muy similar a "Des" [Se puede decir que la "u" se surrura].
+                            </p>
+                            <p>
+                                Escucha y repite la pronunciación del verbo "Desu".
+                            </p>
+                            <p>
+                                <audio controls="controls" src="audio/desu.mp3">
+                                    <a href="audio/desu.mp3" target="_blank">[escuchar]</a>
+                                </audio>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button style="width: 150px;" onclick="toggle('watashiwa-p');">
+                Pronunciación</button>
+            <div id="watashiwa-p" class="spoiler">
+                <p>
+                    /watashiwa __________ des/
+                </p>
+                <p>
+                    <audio controls="controls" src="audio/watashiwa desu.mp3">
+                        <a href="audio/watashiwa desu.mp3" target="_blank">[escuchar]</a>
+                    </audio>
+                </p>
+                <p>
+                    Note: La silaba "su" ha perdido la vocal en la pronunciación, dejando al verbo "desu"
+                    como "des" [Se puede decir que la "u" se susurra].
+                </p>
+            </div>
+            <button style="width: 150px;" onclick="toggle('watashiwa-e');">
+                Escritura</button>
+            <div id="watashiwa-e" class="spoiler">
+                <p>
+                    Escritura Hiragana: わたしは __________ です。
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Hiragana
+                            </th>
+                            <th>
+                                Rōmaji
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                わ
+                            </td>
+                            <td>
+                                Wa
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                た
+                            </td>
+                            <td>
+                                Ta
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                し
+                            </td>
+                            <td>
+                                Shi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                は*
+                            </td>
+                            <td>
+                                Wa
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                で
+                            </td>
+                            <td>
+                                De
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                す
+                            </td>
+                            <td>
+                                Su
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    *: は cuando se utiliza como una partícula para indicar el sujeto de la oración se
+                    pronuncia y transcribe "wa", "ha" en caso contrario.
+                </p>
+                <p>
+                    Note: Los Hiragana 「て」 (Que vimos en Hajimemashite) y 「で」 son my similares. De hecho,
+                    las silabas con el sonido "t" se cambian al sonido "d" tan solo agregando la marca
+                    diacrítica 「゛」, la cual, como se ha dicho anteriormente, se conoce como "<strong>Dakuten</strong>".
+                </p>
+                <button style="width: 150px;" onclick="toggle('watashiwa-k');">
+                    Kanji</button>
+                <div id="watashiwa-k" class="spoiler">
+                    <p>
+                        Escritura Kanji: 私は __________ です
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Kanji
+                                </th>
+                                <th>
+                                    Rōmaji
+                                </th>
+                                <th>
+                                    Significado
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    私
+                                </td>
+                                <td>
+                                    Watashi
+                                </td>
+                                <td>
+                                    Yo
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button style="width: 150px;" onclick="toggle('watashiwa-t');">
+                Traducción</button>
+            <div id="watashiwa-t" class="spoiler">
+                <p>
+                    "Watashi" se traduce "yo" y "Desu" es el verbo "ser", ya que la frase está en primera
+                    persona "Desu" se traduce "Soy".
+                </p>
+                <p>
+                    Por tanto la frase "Watashi-wa __________ desu" literalmente dice "Yo __________
+                    soy". Lo que quiere decir: "Yo soy __________".
+                </p>
+            </div>
+            <button style="width: 150px;" onclick="toggle('watashiwa-v');">
+                Variante</button>
+            <div id="watashiwa-v" class="spoiler">
+                <p>
+                    Si está claro que hablas de ti mismo puedes omitir "Watashi-wa" por completo dejando
+                    la oración de la siguiente forma: "__________ desu".
+                </p>
+            </div>
+            <button style="width: 150px;" onclick="toggle('watashiwa-a');">
+                Alternativa</button>
+            <div id="watashiwa-a" class="spoiler">
+                <p>
+                    "Watashi-wa __________ desu" significa "Yo soy __________". Sin embargo es posible
+                    decir "Mi nombre es __________". Para hacer esto dices:
+                </p>
+                <div class="vocabulary">
+                    <p style="font-family: monospace;">
+                        Watashi-no namae-wa __________ desu.
+                    </p>
+                    <button style="width: 150px;" onclick="toggle('watashiwa-a-ex');">
+                        Practica</button>
+                    <div id="watashiwa-a-ex" class="spoiler">
+                        <p>
+                            Escucha y repite la pronunciación de "Watashi-no name-wa __________ desu".
+                        </p>
+                        <p>
+                            Watashi-no name-wa __________ desu, Watashi-no name-wa Misato desu, Watashi-no name-wa
+                            __________ desu
+                            <audio controls="controls" src="audio/watashino namae r.mp3">
+                                <a href="audio/watashino namae r.mp3" target="_blank">[escuchar]</a>
+                            </audio>
+                        </p>
+                        <p>
+                            Escucha y repite la pronunciación de "Namae" silaba por silaba desde el final:
+                        </p>
+                        <p>
+                            E e mae mae namae namae:
+                            <audio controls="controls" src="audio/namae ex.mp3">
+                                <a href="audio/namae ex.mp3" target="_blank">[escuchar]</a>
+                            </audio>
+                        </p>
+                        <p>
+                            Si lo deseas, intenta practicar las partes de forma individual:
+                        </p>
+                        <ul>
+                            <li>
+                                <p>
+                                    <strong>Watashi-no namae-wa</strong></p>
+                                <button style="width: 150px;" onclick="toggle('watashino');">
+                                    Explicación</button>
+                                <div id="watashino" class="spoiler">
+                                    <p>
+                                        "Watashi-no" es el posesivo en primera persona en Japonés. La partícula "no" se
+                                        agrega para indicar el dueño del sustantivo que se indique después, por lo que se
+                                        utiliza de forma similar al genitivo sajón ("'s" que se agrega a un sujeto en inglés
+                                        para indicar posesión).
+                                    </p>
+                                    <p>
+                                        Luego tenemos "namae-wa", este es el sujeto de la oración (marcado por la partícula
+                                        "wa"). "Namae" literalmente significa "primer nombre". Debido a que se encuentra
+                                        precedido de "Watashi-no" (mi) la frase "Watashi-no namae-wa" significa: "Mi primer
+                                        nombre".
+                                    </p>
+                                    <p>
+                                        Escucha y repite la pronunciación de la frase "Mi nombre" como se utiliza en una
+                                        oración.
+                                    </p>
+                                    <p>
+                                        <audio controls="controls" src="audio/watashino namaewa.mp3">
+                                            <a href="audio/watashino namaewa.mp3" target="_blank">[escuchar]</a>
+                                        </audio>
+                                    </p>
+                                    <p>
+                                        Ejemplo de posesivo: El carro de Misato
+                                    </p>
+                                    <div class="vocabulary">
+                                        <p style="font-family: monospace;">
+                                            Misato-no kuruma.
+                                        </p>
+                                        <button style="width: 150px;" onclick="toggle('misatono-kuruma-ex');">
+                                            Practica</button>
+                                        <div id="misatono-kuruma-ex" class="spoiler">
+                                            <p>
+                                                Escucha y repite la pronunciación de "Misato-no Kuruma".
+                                            </p>
+                                            <p>
+                                                <audio controls="controls" src="audio/misatono kuruma.mp3">
+                                                    <a href="audio/misatono kuruma.mp3" target="_blank">[escuchar]</a>
+                                                </audio>
+                                            </p>
+                                            <p>
+                                                Escucha y repite la pronunciación de "Kuruma" silaba por silaba desde el final:
+                                            </p>
+                                            <p>
+                                                Ma ma ruma ruma kuruma kuruma
+                                                <audio controls="controls" src="audio/kuruma ex.mp3">
+                                                    <a href="audio/kuruma ex.mp3" target="_blank">[escuchar]</a>
+                                                </audio>
+                                            </p>
+                                            <button style="width: 150px;" onclick="toggle('misatono-kuruma-s');">
+                                                Explicación</button>
+                                            <div id="misatono-kuruma-s" class="spoiler">
+                                                <p>
+                                                    "Misato-no" es un posesivo en tercera persona en Japonés, en particular significa
+                                                    que el sustantivo que sigue le pertenece a Misato. En este caso "Kuruma" que significa
+                                                    "carro", por tanto "Misato-no kuruma" significa "El carro de Misato".
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <button style="width: 150px;" onclick="toggle('misatono-kuruma-p');">
+                                            Pronunciación</button>
+                                        <div id="misatono-kuruma-p" class="spoiler">
+                                            <p>
+                                                /Misato-no kuruma/
+                                            </p>
+                                            <p>
+                                                <audio controls="controls" src="audio/misatono kuruma.mp3">
+                                                    <a href="audio/misatono kuruma.mp3" target="_blank">[escuchar]</a>
+                                                </audio>
+                                            </p>
+                                        </div>
+                                        <button style="width: 150px;" onclick="toggle('misatono-kuruma-e');">
+                                            Escritura</button>
+                                        <div id="misatono-kuruma-e" class="spoiler">
+                                            <p>
+                                                Escritura Hiragana: みさとのくるま。
+                                            </p>
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            Hiragana
+                                                        </th>
+                                                        <th>
+                                                            Rōmaji
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            の
+                                                        </td>
+                                                        <td>
+                                                            No
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            く
+                                                        </td>
+                                                        <td>
+                                                            Ku
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            る
+                                                        </td>
+                                                        <td>
+                                                            Ru
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            Ma
+                                                        </td>
+                                                        <td>
+                                                            ま
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <button style="width: 150px;" onclick="toggle('misatono-kuruma-k');">
+                                                Kanji</button>
+                                            <div id="misatono-kuruma-k" class="spoiler">
+                                                <p>
+                                                    Escritura Kanji: みさとの車
+                                                </p>
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>
+                                                                Kanji
+                                                            </th>
+                                                            <th>
+                                                                Rōmaji
+                                                            </th>
+                                                            <th>
+                                                                Significado
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                車
+                                                            </td>
+                                                            <td>
+                                                                Kuruma
+                                                            </td>
+                                                            <td>
+                                                                Carro
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <button style="width: 150px;" onclick="toggle('misatono-kuruma-t');">
+                                            Traducción</button>
+                                        <div id="misatono-kuruma-t" class="spoiler">
+                                            <p>
+                                                "Misato-no Kuruma" se traduce: "El carro de Misato". Esta es una frase nominal (es
+                                                decir que identifica algo, funciona como sustantivo). Si se encuentra por si sola
+                                                se puede asumir que se trata del nombre de algo, por ejemplo una película.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>
+                                    <strong>Desu</strong></p>
+                                <button style="width: 150px;" onclick="toggle('desu-a');">
+                                    Explicación</button>
+                                <div id="desu-a" class="spoiler">
+                                    <p>
+                                        "Desu" es la forma presente del verbo "ser". En Japonés el verbo se coloca al final
+                                        de la oración y no se conjuga para cada sujeto. Es decir que "desu" significa "soy",
+                                        "eres", "es", "somos", "sois", y "son".
+                                    </p>
+                                    <p>
+                                        En Japonés es común (y es a lo que nos debemos acostumbrar) encontrar el verbo al
+                                        final de la oración. Sin embargo gracias al uso de las partículas (por ejemplo "wa")
+                                        las oraciones no pierden sentido si se reordenan las palabras, con algunas excepciones.
+                                    </p>
+                                    <p>
+                                        Hay que resaltar que el sonido de la vocal en "su" se pierde, por lo que "Desu"
+                                        suena muy similar a "Des" [Se puede decir que la "u" se susurra].
+                                    </p>
+                                    <p>
+                                        Escucha y repite la pronunciación del verbo "Desu".
+                                    </p>
+                                    <p>
+                                        <audio controls="controls" src="audio/desu.mp3">
+                                            <a href="audio/desu.mp3" target="_blank">[escuchar]</a>
+                                        </audio>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button style="width: 150px;" onclick="toggle('watashiwa-a-p');">
+                        Pronunciación</button>
+                    <div id="watashiwa-a-p" class="spoiler">
+                        <p>
+                            /watashino namaewa __________ des/
+                        </p>
+                        <p>
+                            <audio controls="controls" src="audio/watashino namaewa desu.mp3">
+                                <a href="audio/watashino namaewa desu.mp3" target="_blank">[escuchar]</a>
+                            </audio>
+                        </p>
+                        <p>
+                            Note: La silaba "su" ha perdido la vocal en la pronunciación, dejando al verbo "desu"
+                            como "des" [Se puede decir que la "u" se susurra].
+                        </p>
+                    </div>
+                    <button style="width: 150px;" onclick="toggle('watashiwa-a-e');">
+                        Escritura</button>
+                    <div id="watashiwa-a-e" class="spoiler">
+                        <p>
+                            Escritura Hiragana: わたしのなまえは __________ です。
+                        </p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Hiragana
+                                    </th>
+                                    <th>
+                                        Rōmaji
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        わ
+                                    </td>
+                                    <td>
+                                        Wa
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        た
+                                    </td>
+                                    <td>
+                                        Ta
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        し
+                                    </td>
+                                    <td>
+                                        Shi
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        の
+                                    </td>
+                                    <td>
+                                        No
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        な
+                                    </td>
+                                    <td>
+                                        Na
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        ま
+                                    </td>
+                                    <td>
+                                        Ma
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        え
+                                    </td>
+                                    <td>
+                                        E
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        は*
+                                    </td>
+                                    <td>
+                                        Wa
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        で
+                                    </td>
+                                    <td>
+                                        De
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        す
+                                    </td>
+                                    <td>
+                                        Su
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>
+                            *: は cuando se utiliza como una partícula para indicar el sujeto de la oración se
+                            pronuncia y transcribe "wa", "ha" en caso contrario.
+                        </p>
+                        <p>
+                            Note: Los Hiragana 「て」 (Que vimos en Hajimemashite) y 「で」 son my similares. De hecho,
+                            las silabas con el sonido "t" se cambian al sonido "d" tan solo agregando la marca
+                            diacrítica 「゛」, la cual, como se ha dicho anteriormente, se conoce como "<strong>Dakuten</strong>".
+                        </p>
+                        <button style="width: 150px;" onclick="toggle('watashiwa-a-k');">
+                            Kanji</button>
+                        <div id="watashiwa-a-k" class="spoiler">
+                            <p>
+                                Escritura Kanji: 私の名前は __________ です
+                            </p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Kanji
+                                        </th>
+                                        <th>
+                                            Rōmaji
+                                        </th>
+                                        <th>
+                                            Significado
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            私
+                                        </td>
+                                        <td>
+                                            Watashi
+                                        </td>
+                                        <td>
+                                            Yo
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            名前
+                                        </td>
+                                        <td>
+                                            Namae
+                                        </td>
+                                        <td>
+                                            Primer Nombre
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            名
+                                        </td>
+                                        <td>
+                                            Na
+                                        </td>
+                                        <td>
+                                            Nombre
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            前
+                                        </td>
+                                        <td>
+                                            Mae
+                                        </td>
+                                        <td>
+                                            Antes, primero, anterior, en frente
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button style="width: 150px;" onclick="toggle('watashiwa-a-t');">
+                        Traducción</button>
+                    <div id="watashiwa-a-t" class="spoiler">
+                        <p>
+                            "Watashi-no namae-wa" se traduce "Mi primer nombre" y "Desu" es el verbo "ser",
+                            ya que el sujeto de la oración es el nombre la frase está en tercera persona y "Desu"
+                            se traduce "Es".
+                        </p>
+                        <p>
+                            Por tanto la frase "Watashi-no namae-wa __________ desu" literalmente dice "Mi primer
+                            nombre __________ es". Lo que quiere decir: "Mi primer nombre es __________".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            Por ultimo es necesario decir:
+        </p>
+        <div class="vocabulary">
+            <p style="font-family: monospace;">
+                Dōzo yoroshiku onegaishimasu.
+            </p>
+            <button style="width: 150px;" onclick="toggle('dozoyoroshiku-ex');">
+                Practica</button>
+            <div id="dozoyoroshiku-ex" class="spoiler">
+                <p>
+                    Escucha y repite la frase "Dōzo yoroshiku onegai shimasu".
+                </p>
+                <p>
+                    <audio controls="controls" src="audio/doozo yoroshiku onegai shimasu.mp3">
+                        <a href="audio/doozo yoroshiku onegai shimasu.mp3" target="_blank">[escuchar]</a>
+                    </audio>
+                </p>
+                <p>
+                    Escucha y repite la pronunciación de "Yoroshiku" silaba por silaba desde el final:
+                </p>
+                <p>
+                    Ku ku shiku shiku roshiku roshiku yoroshiku yoroshiku:
+                    <audio controls="controls" src="audio/yoroshiku ex.mp3">
+                        <a href="audio/yoroshiku ex.mp3" target="_blank">[escuchar]</a>
+                    </audio>
+                </p>
+                <p>
+                    Escucha y repite la pronunciación de "Onegaishimasu" silaba por silaba desde el
+                    final:
+                </p>
+                <p>
+                    Su su masu masu shimasu shimasu ishimasu ishimasu gaishimasu gaishimasu negaishimasu
+                    negaishimasu onegaishimasu onegaishimasu:
+                    <audio controls="controls" src="audio/onegaishimasu ex.mp3">
+                        <a href="audio/onegaishimasu ex.mp3" target="_blank">[escuchar]</a>
+                    </audio>
+                </p>
+                <p>
+                    Si lo deseas, intenta practicar las partes de forma individual:
+                </p>
+                <ul>
+                    <li>
+                        <p>
+                            <strong>Dōzo</strong></p>
+                        <button style="width: 150px;" onclick="toggle('doozo');">
+                            Explicación</button>
+                        <div id="doozo" class="spoiler">
+                            <p>
+                                "Dōzo" se utiliza para decir: "Por favor", "Siga", "Adelante". Esta palabra representa
+                                una invitación más que una petición. Su interpretación puede cambiar por el contexto,
+                                desde invitar a alguien a entrar a un lugar u ofrecerle asiento hasta darle paso
+                                a alguien o entregar algo.
+                            </p>
+                            <p>
+                                La marca diacrítica "¯" conocida como <strong>"Macrón"</strong> indica que la vocal
+                                a la que se le coloca se debe alargar en su pronunciación. En este caso "Dōzo" se
+                                pronuncia "Doozo".
+                            </p>
+                            <p>
+                                Escucha y repite la pronunciación de "Dōzo":
+                            </p>
+                            <p>
+                                <audio controls="controls" src="audio/doozo.mp3">
+                                    <a href="audio/doozo.mp3" target="_blank">[escuchar]</a>
+                                </audio>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Yoroshiku</strong></p>
+                        <button style="width: 150px;" onclick="toggle('yoroshiku');">
+                            Explicación</button>
+                        <div id="yoroshiku" class="spoiler">
+                            <p>
+                                "Yoroshiku" se utiliza para decir: "Saludos". Es una expresión que se utiliza al
+                                conocer a alguien, y no tiene una traducción exacta. Es posible encontrarlo traducido
+                                como "Gusto en conocerte" (Sin embargo vamos a reservar eso para "Hajimemashite").
+                                Otra traducción que se ha propuesto es "¿Cómo estás?", sin embargo para eso está
+                                la frase "Ogenkidesuka?". La traducción más acertada para "Yoroshiku" es "Trátame
+                                bien" o "Tratémonos bien" [Similar a "cuenta conmigo" o "seamos amigos"], sin embargo
+                                solo se utiliza en el contexto del saludo y en español no hay una expresión que
+                                cumpla el mismo rol (tampoco en inglés).
+                            </p>
+                            <p>
+                                Escucha y repite la pronunciación de "Yoroshiku":
+                            </p>
+                            <p>
+                                <audio controls="controls" src="audio/yoroshiku.mp3">
+                                    <a href="audio/yoroshiku.mp3" target="_blank">[escuchar]</a>
+                                </audio>
+                            </p>
+                            <p>
+                                La expresión "Ogenkidesuka?":
+                            </p>
+                            <div class="vocabulary">
+                                <p style="font-family: monospace;">
+                                    Ogenkidesuka?.
+                                </p>
+                                <button style="width: 150px;" onclick="toggle('ogenkidesuka-ex');">
+                                    Practica</button>
+                                <div id="ogenkidesuka-ex" class="spoiler">
+                                    <p>
+                                        Escucha y repite la pronunciación de "Ogenkidesuka?"
+                                    </p>
+                                    <p>
+                                        <audio controls="controls" src="audio/ogenkidesuka.mp3">
+                                            <a href="audio/ogenkidesuka.mp3" target="_blank">[escuchar]</a>
+                                        </audio>
+                                    </p>
+                                    <p>
+                                        Escucha y repite la pronunciación de "Ogenkidesuka?" silaba por silaba desde el
+                                        final:
+                                    </p>
+                                    <p>
+                                        Ka? ka? suka? suka? desuka? desuka? kidesuka? kidesuka? nkidesuka? nkidesuka? genkidesuka?
+                                        genkidesuka? Ogenkidesuka? Ogenkidesuka?
+                                        <audio controls="controls" src="audio/ogenkidesuka ex.mp3">
+                                            <a href="audio/ogenkidesuka ex.mp3" target="_blank">[escuchar]</a>
+                                        </audio>
+                                    </p>
+                                    <p>
+                                        Escucha y repite la pronunciación de "Ogenki" silaba por silaba desde el final:
+                                    </p>
+                                    <p>
+                                        Ki ki nki nki genki genki ogenki ogenki
+                                        <audio controls="controls" src="audio/ogenki ex.mp3">
+                                            <a href="audio/ogenki ex.mp3" target="_blank">[escuchar]</a>
+                                        </audio>
+                                    </p>
+                                    <p>
+                                        Si lo deseas, intenta practicar las partes de forma individual:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                <strong>Ogenki</strong></p>
+                                            <button style="width: 150px;" onclick="toggle('ogenki');">
+                                                Explicación</button>
+                                            <div id="ogenki" class="spoiler">
+                                                <p>
+                                                    "Ogenki" significa "saludable" y se utiliza para referirse al estado de salud de
+                                                    una persona. "Ogenki" tiene la partícula "O" como prefijo como forma de cortesía,
+                                                    es perfectamente valido utilizar "Genki" entre amigos.
+                                                </p>
+                                                <p>
+                                                    Escucha y repite la pronunciación de "Saludable":
+                                                </p>
+                                                <p>
+                                                    <audio controls="controls" src="audio/ogenki.mp3">
+                                                        <a href="audio/ogenki.mp3" target="_blank">[escuchar]</a>
+                                                    </audio>
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Desuka</strong></p>
+                                            <button style="width: 150px;" onclick="toggle('desuka');">
+                                                Explicación</button>
+                                            <div id="desuka" class="spoiler">
+                                                <p>
+                                                    "Desuka" es el verbo "Desu" con la partícula "ka" agregada al final. La partícula
+                                                    "ka" se utiliza para convertir la oración en una pregunta.
+                                                </p>
+                                                <p>
+                                                    Escucha y repite la pronunciación de "Desuka":
+                                                </p>
+                                                <p>
+                                                    <audio controls="controls" src="audio/desuka.mp3">
+                                                        <a href="audio/desuka.mp3" target="_blank">[escuchar]</a>
+                                                    </audio>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button style="width: 150px;" onclick="toggle('ogenkidesuka-p');">
+                                    Pronunciación</button>
+                                <div id="ogenkidesuka-p" class="spoiler">
+                                    <p>
+                                        /Ogenkideska/
+                                    </p>
+                                    <p>
+                                        <audio controls="controls" src="audio/ogenkidesuka.mp3">
+                                            <a href="audio/ogenkidesuka.mp3" target="_blank">[escuchar]</a>
+                                        </audio>
+                                    </p>
+                                    <p>
+                                        Note: las silabas con "g" en japonés se pronuncian con el sonido de la "g" del español,
+                                        pero nunca como la "j". Es decir que se pronuncia "ga", "gue", "gui", "go", "gu".
+                                    </p>
+                                </div>
+                                <button style="width: 150px;" onclick="toggle('ogenkidesuka-e');">
+                                    Escritura</button>
+                                <div id="ogenkidesuka-e" class="spoiler">
+                                    <p>
+                                        Escritura Hiragana: おげんきですか？
+                                    </p>
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>
+                                                    Hiragana
+                                                </th>
+                                                <th>
+                                                    Rōmaji
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    お
+                                                </td>
+                                                <td>
+                                                    O
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    げ
+                                                </td>
+                                                <td>
+                                                    Ge
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    ん
+                                                </td>
+                                                <td>
+                                                    N
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    き
+                                                </td>
+                                                <td>
+                                                    Ki
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    で
+                                                </td>
+                                                <td>
+                                                    De
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    す
+                                                </td>
+                                                <td>
+                                                    Su
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    か
+                                                </td>
+                                                <td>
+                                                    Ka
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>
+                                        Note: Los Hiragana 「て」 (Que vimos en Hajimemashite) y 「で」 son my similares. De hecho,
+                                        las silabas con el sonido "t" se cambian al sonido "d" tan solo agregando la marca
+                                        diacrítica 「゛」, la cual, como se ha dicho anteriormente, se conoce como <strong>Dakuten</strong>.
+                                    </p>
+                                    <button style="width: 150px;" onclick="toggle('ogenkidesuka-k');">
+                                        Kanji</button>
+                                    <div id="ogenkidesuka-k" class="spoiler">
+                                        <p>
+                                            Escritura Kanji: お元気ですか?
+                                        </p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        Kanji
+                                                    </th>
+                                                    <th>
+                                                        Rōmaji
+                                                    </th>
+                                                    <th>
+                                                        Significado
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        元気
+                                                    </td>
+                                                    <td>
+                                                        Genki
+                                                    </td>
+                                                    <td>
+                                                        Saludable, energia
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        元
+                                                    </td>
+                                                    <td>
+                                                        Gen
+                                                    </td>
+                                                    <td>
+                                                        Origen, inicio, causa, raiz
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        気
+                                                    </td>
+                                                    <td>
+                                                        Ki
+                                                    </td>
+                                                    <td>
+                                                        Aire, espiritu, mente, voluntad, sentimientos, naturaleza
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <button style="width: 150px;" onclick="toggle('ogenkidesuka-t');">
+                                    Traducción</button>
+                                <div id="ogenkidesuka-t" class="spoiler">
+                                    <p>
+                                        "Ogenkidesuka" traduce: "Como estás?"
+                                    </p>
+                                    <p>
+                                        Vale la pena destacar que "Ogenkidesuka" es una pregunta con el verbo "Desu" (que
+                                        vimos utilizado para presentarse), para formar la pregunta se agrega la partícula
+                                        "ka" al verbo.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            <strong>Onegaishimasu</strong></p>
+                        <button style="width: 150px;" onclick="toggle('onegaishimasu');">
+                            Explicación</button>
+                        <div id="onegaishimasu" class="spoiler">
+                            <p>
+                                "Onegaishimasu" se utiliza para decir: "Por favor", cuando se le pide a alguien
+                                que haga algo. [Sin embargo no es la única forma de pedir un favor: en Japonés los
+                                verbos se pueden modificar con la partícula "Kudasai" para expresar una petición].
+                            </p>
+                            <ul>
+                                <li>La "O" inicial en "Onegaishimasu" es un prefijo utilizado por cortesía.</li>
+                                <li>"Negai" es una variante "Negau" ("Deseo"), la razón por la que ha sido modificado
+                                    es porque se va a convertir en verbo con el auxiliar "Shimasu".</li>
+                                <li>"Shimasu" es la conjugación del verbo auxiliar "Suru" ("hacer") en modo formal.
+                                </li>
+                            </ul>
+                            <p>
+                                De este modo, Onegaishimasu significa "Desear", como una frase (asumiendo que se
+                                sobre entiende que se habla en primera persona) "Onegaishimasu" es una forma cortes
+                                y formal de decir "Yo deseo".
+                            </p>
+                            <p>
+                                Escucha y repite la pronunciación de "Por favor":
+                            </p>
+                            <p>
+                                <audio controls="controls" src="audio/onegaishimasu.mp3">
+                                    <a href="audio/onegaishimasu.mp3" target="_blank">[escuchar]</a>
+                                </audio>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button style="width: 150px;" onclick="toggle('dozoyoroshiku-p');">
+                Pronunciación</button>
+            <div id="dozoyoroshiku-p" class="spoiler">
+                <p>
+                    /Doozo yoroshku onegaishimas/
+                </p>
+                <p>
+                    <audio controls="controls" src="audio/doozo yoroshiku onegai shimasu.mp3">
+                        <a href="audio/doozo yoroshiku onegai shimasu.mp3" target="_blank">[escuchar]</a>
+                    </audio>
+                </p>
+                <p>
+                    Note 1: La silaba "su" ha perdido la vocal en la pronunciación, dejando al verbo
+                    "onegaishimasu" como "onegaishimas" [Se puede decir que la "u" se susurra].
+                </p>
+                <p>
+                    Note 2: La silaba "shi" ha perdido la vocal en la pronunciación, dejando la palabra
+                    "yoroshiku" como "yoroshku".
+                </p>
+            </div>
+            <button style="width: 150px;" onclick="toggle('dozoyoroshiku-e');">
+                Escritura</button>
+            <div id="dozoyoroshiku-e" class="spoiler">
+                <p>
+                    Escritura Hiragana: どうぞよろしくおねがいします。
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Hiragana
+                            </th>
+                            <th>
+                                Rōmaji
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                ど
+                            </td>
+                            <td>
+                                Do
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                う
+                            </td>
+                            <td>
+                                U
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ぞ
+                            </td>
+                            <td>
+                                Zo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                よ
+                            </td>
+                            <td>
+                                Yo
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ろ
+                            </td>
+                            <td>
+                                Ro
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                し
+                            </td>
+                            <td>
+                                Shi
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                く
+                            </td>
+                            <td>
+                                Ku
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                お
+                            </td>
+                            <td>
+                                O
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ね
+                            </td>
+                            <td>
+                                Ne
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                が
+                            </td>
+                            <td>
+                                Ga
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                い
+                            </td>
+                            <td>
+                                I
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                ま
+                            </td>
+                            <td>
+                                Ma
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                す
+                            </td>
+                            <td>
+                                Su
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Note: Los Hiragana 「と」 (To) y 「ど」 son my similares. De hecho, las silabas con el
+                    sonido "t" se cambian al sonido "d" tan solo agregando la marca diacrítica 「゛」,
+                    la cual, como se ha dicho anteriormente, se conoce como "<strong>Dakuten</strong>".
+                </p>
+                <p>
+                    Note: Los Hiragana 「そ」 (So) y 「ぞ」 son my similares. De hecho, las silabas con el
+                    sonido "s" se cambian al sonido "z" tan solo agregando la marca diacrítica 「゛」,
+                    la cual, como se ha dicho anteriormente, se conoce como "<strong>Dakuten</strong>".
+                </p>
+                <p>
+                    Note: Los Hiragana 「か」 (Ka) y 「が」 son my similares. De hecho, las silabas con el
+                    sonido "k" se cambian al sonido "g" tan solo agregando la marca diacrítica 「゛」,
+                    la cual, como se ha dicho anteriormente, se conoce como "<strong>Dakuten</strong>".
+                </p>
+                <button style="width: 150px;" onclick="toggle('dozoyoroshiku-k');">
+                    Kanji</button>
+                <div id="dozoyoroshiku-k" class="spoiler">
+                    <p>
+                        Escritura Kanji: どうぞよろしくお願いします。
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>
+                                    Kanji
+                                </th>
+                                <th>
+                                    Rōmaji
+                                </th>
+                                <th>
+                                    Significado
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    願
+                                </td>
+                                <td>
+                                    Gan, Nega
+                                </td>
+                                <td>
+                                    Deseo, esperanza, petición, pregunta
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button style="width: 150px;" onclick="toggle('dozoyoroshiku-t');">
+                Traducción</button>
+            <div id="dozoyoroshiku-t" class="spoiler">
+                <p>
+                    "Dōzo yoroshiku onegaishimasu" no tiene una traducción exacta, y significa: "Por
+                    favor, trateme bien" o "Por favor, llevemonos bien", o tambien "Ojalá nos llevemos
+                    bien".
+                </p>
+            </div>
+            <button style="width: 150px;" onclick="toggle('dozoyoroshiku-v');">
+                Variante</button>
+            <div id="dozoyoroshiku-v" class="spoiler">
+                <p>
+                    La expresión "Dōzo yoroshiku onegaishimasu" puede quedar tan corta como "Yoroshiku"
+                    dependiendo de que tan cortes y formal se hable.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Modo
+                            </th>
+                            <th>
+                                Expresión
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Formal, a un superior
+                            </td>
+                            <td>
+                                "Dōzo yoroshiku onegaishimasu"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                A un superior, a un desconocido
+                            </td>
+                            <td>
+                                "Yoroshiku onegaishimasu"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                A un compañero
+                            </td>
+                            <td>
+                                "Dōzo yoroshiku"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                A un amigo, a un subordinado
+                            </td>
+                            <td>
+                                "Yoroshiku"
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr />
+        <p>
+            Ahora que sabes como presentarse en japonés vuelve a escuchar como se presentan
+            Misato y Kaoru:
+        </p>
+        <p>
+            Misato:
+            <audio controls="controls" src="audio/presentation misato.mp3">
+                <a href="audio/presentation misato.mp3" target="_blank">[escuchar]</a>
+            </audio>
+        </p>
+        <p>
+            Kaoru:
+            <audio controls="controls" src="audio/presentation kaoru.mp3">
+                <a href="audio/presentation kaoru.mp3" target="_blank">[escuchar]</a>
+            </audio>
+        </p>
+        <p>
+            <strong>Consejo</strong>: toma una libreta o un cuaderno de notas y copia la presentación
+            de Misato y Kaoru palabra por palabra. El objetivo de esto no es tener algo que
+            consultar en caso de dudas, sino ayudarte a memorizar las oraciones al afianzar
+            la asociación de los conceptos mediante la escritura.
+        </p>
+        <p>
+            <a href="index.htm">Regresar al índice</a>
+        </p>
+    </body>
+</html>
